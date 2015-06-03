@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="835.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.rsa.encryptionscheme.Controller">
+  <children>
+    <Text layoutX="54.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="p" />
+    <TextField fx:id="textfieldP" layoutX="69.0" layoutY="89.0" prefWidth="40.0" />
+    <Label layoutX="23.0" layoutY="14.0" minHeight="36.05078125" prefHeight="37.0" prefWidth="446.0" text="RSA Scheme (FC2/CIS)">
+      <font>
+        <Font name="Arial" size="23.0" />
+      </font>
+    </Label>
+    <Text layoutX="125.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="q" />
+    <TextField fx:id="textfieldQ" layoutX="136.0" layoutY="89.0" prefWidth="46.681640625" />
+    <Text layoutX="195.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e" />
+    <TextField fx:id="textfieldE" layoutX="206.0" layoutY="89.0" prefWidth="46.681640625" />
+    <Text layoutX="275.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
+    <TextField fx:id="textfieldMessage" layoutX="333.0" layoutY="89.0" prefWidth="165.0" promptText="Enter number or plaintext" />
+    <Separator layoutX="28.0" layoutY="127.0" prefWidth="793.0" />
+    <Button fx:id="calculateButton" layoutX="526.0" layoutY="89.0" mnemonicParsing="false" onAction="#performCalculation" text="Calculate" />
+    <WebView id="webviewcss" fx:id="webview" blendMode="SRC_ATOP" disable="false" focusTraversable="false" layoutX="8.0" layoutY="159.0" prefHeight="400.0" prefWidth="820.0" />
+    <Text layoutX="283.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Rights deserved, developed by Ismail Zaidi" />
+    <Text layoutX="54.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select two prime numbers for p and q" />
+  </children>
+</AnchorPane>
